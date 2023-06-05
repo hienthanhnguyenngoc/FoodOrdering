@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "413234576503",
+    "firebase_url": "https://foodordering-firebase-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "foodordering-firebase",
+    "storage_bucket": "foodordering-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413234576503:android:b510280962019e0a405a72",
+        "android_client_info": {
+          "package_name": "com.project.foodordering_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413234576503-8hc52bkij765nan1749erpsn65r5j54t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.foodordering_firebase",
+            "certificate_hash": "448205162d820517ebe364533184223441d4b210"
+          }
+        },
+        {
+          "client_id": "413234576503-5t5v38c11k0ag54l14hmnu91jbuviopj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1knSiSzP0S-wcymAZsb1_O0mP7JMoUyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413234576503-5t5v38c11k0ag54l14hmnu91jbuviopj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

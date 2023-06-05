@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".user.ViewStoreActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</LinearLayout>
+    <ImageView
+        android:id="@+id/storeImg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/storeimage1"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-180dp"
+        android:layout_marginLeft="16dp"
+        app:srcCompat="@drawable/ic_back_white" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="-47dp"
+        android:background="@null"
+        android:button="@drawable/heart_selector"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:textOff=""
+        android:textOn="" />
+
+    <ImageView
+        android:id="@+id/iconCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-39dp"
+        android:layout_gravity="right"
+        android:layout_marginEnd="76dp"
+        app:srcCompat="@drawable/ic_cart" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="90dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp" >
+
+        <TextView
+            android:id="@+id/tvStoreName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-35dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Starbucks Coffee"/>
+
+        <View
+            android:layout_width="220dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-16dp"
+            android:background="#959595"/>
+
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:textSize="13sp"
+            android:text="20 Cộng Hòa, quận Tân Bình"/>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="38dp"
+            android:drawableLeft="@drawable/ic_dongho"
+            android:drawablePadding="10dp"
+            android:text="Đang mở cửa" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="475dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="460dp"
+                android:divider="#3E3E3E"
+                android:dividerHeight="0.5dp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

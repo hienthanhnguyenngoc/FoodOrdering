@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/underline"
+    tools:context=".admin.AddUserActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:background="@drawable/border_vuong"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thêm tài khoản"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:textAlignment="center"
+                android:textColor="@color/main"/>
+
+
+            <EditText
+                android:id="@+id/addUserName"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:gravity="start|center_vertical"
+                android:background="@drawable/edit_text_border"
+                android:padding="16dp"
+                android:textColor="@color/main"
+                android:hint="Tên tài khoản"
+                android:textStyle="italic"/>
+
+            <EditText
+                android:id="@+id/addPassWord"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center_vertical"
+                android:background="@drawable/edit_text_border"
+                android:padding="16dp"
+                android:textColor="@color/main"
+                android:hint="Mật khẩu"
+                android:textStyle="italic"/>
+
+            <EditText
+                android:id="@+id/addPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center_vertical"
+                android:background="@drawable/edit_text_border"
+                android:padding="16dp"
+                android:textColor="@color/main"
+                android:maxLength="10"
+                android:hint="Số điện thoại"
+                android:textStyle="italic"/>
+
+            <EditText
+                android:id="@+id/addFullName"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:gravity="start|center_vertical"
+                android:background="@drawable/edit_text_border"
+                android:padding="16dp"
+                android:textColor="@color/main"
+                android:hint="Họ và tên"
+                android:textStyle="italic"/>
+
+            <Button
+                android:id="@+id/btnAddUser"
+                android:layout_width="140dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="Thêm"
+                android:textSize="18sp"
+                app:cornerRadius="18dp"
+                android:backgroundTint="@color/main"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

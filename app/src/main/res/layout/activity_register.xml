@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background_delivery"
+    tools:context=".user.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_marginTop="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="TRANG ĐĂNG KÝ"/>
+
+        <EditText
+            android:layout_marginTop="100dp"
+            android:id="@+id/ed_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="16dp"
+            android:backgroundTint="@color/underline"
+            android:textColorHint="@color/black"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:lines="1"
+            android:inputType="text"
+            android:hint="Tên đăng nhập"/>
+
+        <EditText
+            android:id="@+id/ed_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:drawableLeft="@drawable/ic_key"
+            android:drawablePadding="16dp"
+            android:backgroundTint="@color/underline"
+            android:textColorHint="@color/black"
+            android:lines="1"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:hint="Nhập mật khẩu"/>
+
+        <EditText
+            android:id="@+id/ed_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="16dp"
+            android:backgroundTint="@color/underline"
+            android:lines="1"
+            android:textColor="#AEADAC"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textColorHint="#4C4C4C"
+            android:hint="Số điện thoại"/>
+
+        <EditText
+            android:id="@+id/ed_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="16dp"
+            android:backgroundTint="@color/underline"
+            android:lines="1"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Họ và tên"/>
+
+
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="24dp"
+            android:text="Đăng ký"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/black"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="10dp" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="italic"
+            android:text="Đã có tài khoản? Đăng nhập tại đây"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</LinearLayout>

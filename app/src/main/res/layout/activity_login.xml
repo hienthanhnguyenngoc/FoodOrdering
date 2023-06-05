@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_login_1"
+    tools:context=".user.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <EditText
+            android:id="@+id/ed_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="-50dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/edit_text_border"
+            android:drawableLeft="@drawable/ic_person_login"
+            android:textColor="@color/main"
+            android:drawablePadding="10dp"
+            android:hint="Tên đăng nhập" />
+
+        <EditText
+            android:id="@+id/ed_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/edit_text_border"
+            android:drawableLeft="@drawable/ic_key_login"
+            android:textColor="@color/main"
+            android:inputType="textPassword"
+            android:drawablePadding="10dp"
+            android:hint="Mật khẩu" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="25dp"
+            android:text="Đăng nhập"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            android:backgroundTint="#372A28"
+            android:textColor="@color/fa"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textStyle="italic"
+            android:text="Chưa có tài khoản? Đăng ký tại đây"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</LinearLayout>
